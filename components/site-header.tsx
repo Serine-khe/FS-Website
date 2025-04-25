@@ -28,17 +28,20 @@ export function SiteHeader() {
     { name: "LMD Program", path: "/lmd-program" },
     { name: "Classic Program", path: "/classic-program" },
     { name: "Licence Pro", path: "/licence-pro" },
+    { name: "Scolarity Service", path: "/contact-scolarity" },
   ]
 
   const postGradPrograms = [
     { name: "PhD Program", path: "/phd-program" },
-    { name: "Research Masters", path: "/research-masters" },
+    { name: "Vice Dean Of Postgraduate", path: "/vice-dean-of-postgraduate" },
   ]
 
   const researchLabs = [
     { name: "Research Laboratories", path: "/research-laboratories" },
-    { name: "Publications", path: "/publications" },
     { name: "Projects", path: "/projects" },
+    { name: "Publications", path: "/publications" },
+
+  
   ]
 
   const isDepartmentPage = departments.some((dept) => pathname === dept.path)
@@ -56,9 +59,9 @@ export function SiteHeader() {
               <Image
                 src="/logo-light.png"
                 alt="Faculty of Sciences Logo"
-                width={70}
-                height={70}
-                className="h-16 w-auto"
+                width={120}
+                height={150}
+                className="h-20 w-auto"
               />
             </Link>
           </div>

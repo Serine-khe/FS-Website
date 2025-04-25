@@ -9,15 +9,10 @@ export default function LicencePro() {
       <SiteHeader />
 
       {/* Gray Banner with Title */}
-      <div className="bg-[#a3a59e] py-8">
-        <div className="container mx-auto px-4 flex items-center">
-          <div className="flex items-center gap-4">
-            <Image src="/logo.png" alt="Faculty of Sciences Logo" width={50} height={50} className="h-12 w-auto" />
-            <div className="text-white">
-              <div className="font-semibold text-xl">LICENCE PROFESSIONNELLE</div>
-              <div>FACULTY OF SCIENCES - UNIVERSITY OF BOUMERDES</div>
-            </div>
-          </div>
+       {/* Gray Banner with Title */}
+       <div className="bg-[#a3a59e] py-8">
+        <div className="container mx-auto px-4">
+          <h1 className="text-3xl font-serif text-black">Licence Profesionelle Program</h1>
         </div>
       </div>
 

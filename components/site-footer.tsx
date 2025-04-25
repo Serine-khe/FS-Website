@@ -80,7 +80,7 @@ export function SiteFooter() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Image src="/logo-light.png" alt="Faculty of Sciences Logo" width={40} height={40} />
+            <Image src="/logo-light.png" alt="Faculty of Sciences Logo" width={250} height={250} />
           </div>
 
           <div className="flex items-center gap-4">

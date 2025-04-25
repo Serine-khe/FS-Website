@@ -15,7 +15,7 @@ export default function Home() {
       subtitle:
         "The Faculty of Sciences, established in 1998, is part of the University of Boumerdès in Algeria. It is located in the city of Boumerdès.",
       buttonText: "learn more",
-      buttonLink: "#",
+      buttonLink: "/history",
     },
     {
       image: "/campus2.jpg",
@@ -47,7 +47,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <ScrollReveal>
             <div className="flex items-center justify-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-serif">Welcome to FS UMBB</h2>
+              <h2 className="text-3xl md:text-4xl font-serif">Welcome to the faculty of science</h2>
               <Image src="/logo-dark.png" alt="Faculty of Sciences Logo" width={80} height={80} className="ml-4" />
             </div>
           </ScrollReveal>
@@ -63,7 +63,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-serif text-center mb-4 text-[#205375]">History</h3>
                   <p className="text-sm mb-6">
-                    The Faculty of Science at UMBB is a hub of academic excellence, fostering innovation in mathematics,
+                    The Faculty of Science at UMBB is a place of academic excellence, fostering innovation in mathematics,
                     physics, chemistry, biology, computer science, agronomy, and sports sciences. With a rich history...
                   </p>
                   <div className="text-center">

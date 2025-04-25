@@ -5,6 +5,15 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import { cn } from "@/lib/utils"
 
 type Direction = "up" | "down" | "left" | "right" | "fade"
+type AnimationType =
+  | "fade-in"
+  | "slide-up"
+  | "slide-down"
+  | "slide-left"
+  | "slide-right"
+  | "scale"
+  | "fade-slide"
+  | "scale-up"
 
 interface ScrollRevealProps {
   children: ReactNode
@@ -15,6 +24,8 @@ interface ScrollRevealProps {
   threshold?: number
   className?: string
   once?: boolean
+  type?: AnimationType
+  animation?: string
 }
 
 export function ScrollReveal({
@@ -26,6 +37,8 @@ export function ScrollReveal({
   threshold = 0.1,
   className,
   once = true,
+  type,
+  animation,
 }: ScrollRevealProps) {
   const { ref, isIntersecting } = useIntersectionObserver({
     threshold,

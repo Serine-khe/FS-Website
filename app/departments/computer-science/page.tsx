@@ -186,7 +186,7 @@ export default function ComputerScienceDepartment() {
                         <h3 className="text-xl font-medium">Dr. YAHIATENE Youcef</h3>
                         <p className="text-sm text-gray-600 mb-2">Department Chair, Professor of Computer Science</p>
                         <p className="text-sm">
-                          Dr. Kaddour specializes in artificial intelligence and machine learning. His current research
+                          Dr. Yahiatene specializes in artificial intelligence and machine learning. His current research
                           focuses on developing new algorithms for natural language processing and computer vision
                           applications. He has published extensively in top-tier conferences and journals.
                         </p>
