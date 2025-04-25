@@ -41,7 +41,7 @@ export default function CommunityPage() {
                   <div className="flex flex-col items-center mb-4">
                     <div className="w-32 h-32 rounded-full bg-white overflow-hidden mb-4">
                       <Image
-                        src="/faculty-#205375.jpg"
+                        src="/faculty-yahiatene.jpg"
                         alt="YAHIATENE Youssef"
                         width={128}
                         height={128}
