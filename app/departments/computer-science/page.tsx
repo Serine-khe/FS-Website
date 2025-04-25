@@ -111,7 +111,7 @@ export default function ComputerScienceDepartment() {
                         href="#coding-club"
                         className="block bg-dark hover:bg-dark-darker text-white px-4 py-2 rounded transition-colors"
                       >
-                        Coding Club
+                        DevUp Club
                       </Link>
                       <Link
                         href="#ai-club"
@@ -183,7 +183,7 @@ export default function ComputerScienceDepartment() {
                         />
                       </div>
                       <div>
-                        <h3 className="text-xl font-medium">Dr. Mohammed Kaddour</h3>
+                        <h3 className="text-xl font-medium">Dr. YAHIATENE Youcef</h3>
                         <p className="text-sm text-gray-600 mb-2">Department Chair, Professor of Computer Science</p>
                         <p className="text-sm">
                           Dr. Kaddour specializes in artificial intelligence and machine learning. His current research
@@ -201,7 +201,7 @@ export default function ComputerScienceDepartment() {
                     <h2 className="text-2xl font-serif mb-4 text-dark">Research & Innovation</h2>
                     <div className="space-y-4">
                       <div>
-                        <h3 className="text-lg font-medium">Artificial Intelligence Lab</h3>
+                        <h3 className="text-lg font-medium">LIMOSE Lab</h3>
                         <p className="text-sm">
                           Developing cutting-edge AI solutions for healthcare, agriculture, and smart cities, with a
                           focus on machine learning and deep neural networks.

@@ -145,7 +145,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center text-sm mb-2 text-[#F4EAE0]">
                   <Calendar className="h-4 w-4 mr-2" />
-                  <span>May 15-17, 2025</span>
+                  <span>April 16-17, 2025</span>
                   <span className="mx-2">•</span>
                   <MapPin className="h-4 w-4 mr-2" />
                   <span>FS UMBB</span>
@@ -174,7 +174,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center text-sm mb-2 text-[#F4EAE0]">
                   <Calendar className="h-4 w-4 mr-2" />
-                  <span>June 10, 2025</span>
+                  <span>April 26, 2025</span>
                   <span className="mx-2">•</span>
                   <Clock className="h-4 w-4 mr-2" />
                   <span>9:00 AM - 5:00 PM</span>
@@ -203,7 +203,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center text-sm mb-2 text-[#F4EAE0]">
                   <Calendar className="h-4 w-4 mr-2" />
-                  <span>July 5-7, 2025</span>
+                  <span>December 19-21, 2024</span>
                   <span className="mx-2">•</span>
                   <MapPin className="h-4 w-4 mr-2" />
                   <span>Computer Science Dept.</span>

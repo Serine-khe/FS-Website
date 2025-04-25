@@ -41,7 +41,7 @@ export default function CommunityPage() {
                   <div className="flex flex-col items-center mb-4">
                     <div className="w-32 h-32 rounded-full bg-white overflow-hidden mb-4">
                       <Image
-                        src="/faculty-yahiatene.jpg"
+                        src="/faculty-#205375.jpg"
                         alt="YAHIATENE Youssef"
                         width={128}
                         height={128}
@@ -54,7 +54,7 @@ export default function CommunityPage() {
                     </blockquote>
                     <div className="text-center">
                       <h3 className="text-xl font-bold">YAHIATENE Youssef</h3>
-                      <p className="text-sm">phd.department Head</p>
+                      <p className="text-sm">PhD Computer Science Department Head</p>
                     </div>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ export default function CommunityPage() {
                     </blockquote>
                     <div className="text-center">
                       <h3 className="text-xl font-bold">BENZENATI Tayeb</h3>
-                      <p className="text-sm">Phd computer science &AI researcher</p>
+                      <p className="text-sm">Phd Computer Science & AI researcher, Professor at FS Umbb</p>
                     </div>
                   </div>
                 </div>
