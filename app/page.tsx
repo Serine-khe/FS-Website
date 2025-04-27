@@ -67,7 +67,9 @@ export default function Home() {
                     physics, chemistry, biology, computer science, agronomy, and sports sciences. With a rich history...
                   </p>
                   <div className="text-center">
-                  
+                    <EnhancedButton href="/history" variant="primary" size="sm">
+                      learn more
+                    </EnhancedButton>
                   </div>
                 </div>
               </div>
@@ -87,11 +89,14 @@ export default function Home() {
                     community of students, faculty, and researchers. With state-of-the-art laboratories...
                   </p>
                   <div className="text-center">
-                   
+                    <EnhancedButton href="/organization" variant="primary" size="sm">
+                      learn more
+                    </EnhancedButton>
                   </div>
                 </div>
               </div>
             </ScrollReveal>
+
 
             {/* Community Card */}
             <ScrollReveal direction="up" delay={300}>
@@ -108,7 +113,9 @@ export default function Home() {
                     education...
                   </p>
                   <div className="text-center">
-                   
+                    <EnhancedButton href="/community" variant="primary" size="sm">
+                      learn more
+                    </EnhancedButton>
                   </div>
                 </div>
               </div>
