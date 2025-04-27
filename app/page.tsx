@@ -67,9 +67,7 @@ export default function Home() {
                     physics, chemistry, biology, computer science, agronomy, and sports sciences. With a rich history...
                   </p>
                   <div className="text-center">
-                    <EnhancedButton href="/history" variant="primary" size="sm">
-                      learn more
-                    </EnhancedButton>
+                  
                   </div>
                 </div>
               </div>
@@ -89,9 +87,7 @@ export default function Home() {
                     community of students, faculty, and researchers. With state-of-the-art laboratories...
                   </p>
                   <div className="text-center">
-                    <EnhancedButton href="/organization" variant="primary" size="sm">
-                      learn more
-                    </EnhancedButton>
+                   
                   </div>
                 </div>
               </div>
@@ -112,9 +108,7 @@ export default function Home() {
                     education...
                   </p>
                   <div className="text-center">
-                    <EnhancedButton href="/community" variant="primary" size="sm">
-                      learn more
-                    </EnhancedButton>
+                   
                   </div>
                 </div>
               </div>
@@ -130,7 +124,7 @@ export default function Home() {
             <div className="flex items-center justify-between mb-12">
               <h2 className="text-3xl md:text-4xl font-serif text-white">News From FS</h2>
               <Link href="/actuality" className="text-white hover:underline flex items-center">
-                View all news <span className="ml-2">→</span>
+               
               </Link>
             </div>
           </ScrollReveal>
@@ -159,8 +153,8 @@ export default function Home() {
                   href="/actuality/a2i-2025"
                   className="text-[#F4EAE0] hover:underline inline-flex items-center group"
                 >
-                  Read more{" "}
-                  <span className="ml-1 transform group-hover:translate-x-1 transition-transform duration-300">→</span>
+             
+                  
                 </Link>
               </div>
             </ScrollReveal>
@@ -188,8 +182,7 @@ export default function Home() {
                   href="/actuality/tedx-boumerdes"
                   className="text-[#F4EAE0] hover:underline inline-flex items-center group"
                 >
-                  Read more{" "}
-                  <span className="ml-1 transform group-hover:translate-x-1 transition-transform duration-300">→</span>
+                
                 </Link>
               </div>
             </ScrollReveal>
@@ -218,8 +211,7 @@ export default function Home() {
                   href="/actuality/smart-city-hackathon"
                   className="text-[#F4EAE0] hover:underline inline-flex items-center group"
                 >
-                  Read more{" "}
-                  <span className="ml-1 transform group-hover:translate-x-1 transition-transform duration-300">→</span>
+                 
                 </Link>
               </div>
             </ScrollReveal>

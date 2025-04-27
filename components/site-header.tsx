@@ -5,6 +5,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Search, Menu, X, ChevronDown, ChevronUp } from "lucide-react"
 import { useState } from "react"
+import { SearchDialog } from "./search-dialog"
 
 export function SiteHeader() {
   const pathname = usePathname()
@@ -13,6 +14,7 @@ export function SiteHeader() {
   const [graduationOpen, setGraduationOpen] = useState(false)
   const [postGradOpen, setPostGradOpen] = useState(false)
   const [researchOpen, setResearchOpen] = useState(false)
+  const [searchOpen, setSearchOpen] = useState(false)
 
   const departments = [
     { name: "Physics", path: "/departments/physics" },
@@ -25,23 +27,20 @@ export function SiteHeader() {
   ]
 
   const graduationPrograms = [
-    { name: "LMD Program", path: "/lmd-program" },
-    { name: "Classic Program", path: "/classic-program" },
-    { name: "Licence Pro", path: "/licence-pro" },
+    { name: "Studies and Students", path: "/studies-and-students" },
+    { name: "Statistics, Information and Guidance Service", path: "/statistics-information-guidance" },
     { name: "Scolarity Service", path: "/contact-scolarity" },
   ]
 
   const postGradPrograms = [
     { name: "PhD Program", path: "/phd-program" },
-    { name: "Vice Dean Of Postgraduate", path: "/vice-dean-of-postgraduate" },
+    { name: "Vice Dean of Postgraduate Education", path: "/vice-dean-postgraduate" },
   ]
 
   const researchLabs = [
     { name: "Research Laboratories", path: "/research-laboratories" },
-    { name: "Projects", path: "/projects" },
     { name: "Publications", path: "/publications" },
-
-  
+    { name: "Projects", path: "/projects" },
   ]
 
   const isDepartmentPage = departments.some((dept) => pathname === dept.path)
@@ -59,8 +58,8 @@ export function SiteHeader() {
               <Image
                 src="/logo-light.png"
                 alt="Faculty of Sciences Logo"
-                width={120}
-                height={150}
+                width={200}
+                height={200}
                 className="h-20 w-auto"
               />
             </Link>
@@ -79,6 +78,7 @@ export function SiteHeader() {
             <button
               className="p-2 text-white transition-transform duration-300 hover:scale-110 active:scale-95"
               aria-label="Search"
+              onClick={() => setSearchOpen(true)}
             >
               <Search className="h-5 w-5" />
             </button>
@@ -90,7 +90,7 @@ export function SiteHeader() {
           <Link
             href="/#news"
             className={`px-3 py-1.5 text-sm text-white hover:bg-white hover:text-[#205375] transition-all duration-300 
-            transform hover:-translate-y-1 active:translate-y-0 ${pathname === "/actuality" ? "bg-white text-[#205375]" : ""}`}
+          transform hover:-translate-y-1 active:translate-y-0 ${pathname === "/actuality" ? "bg-white text-[#205375]" : ""}`}
             onClick={(e) => {
               if (pathname === "/") {
                 e.preventDefault()
@@ -101,14 +101,22 @@ export function SiteHeader() {
             Actuality
           </Link>
 
+          <Link
+            href="/programs"
+            className={`px-3 py-1.5 text-sm text-white hover:bg-white hover:text-[#205375] transition-all duration-300 
+          transform hover:-translate-y-1 active:translate-y-0 ${pathname === "/programs" ? "bg-white text-[#205375]" : ""}`}
+          >
+            Programs
+          </Link>
+
           {/* Graduation Dropdown */}
           <div className="relative group">
             <button
               onClick={() => setGraduationOpen(!graduationOpen)}
               className={`px-3 py-1.5 text-sm text-white hover:bg-white hover:text-[#205375] transition-all duration-300 
-              transform hover:-translate-y-1 active:translate-y-0 flex items-center ${
-                isGraduationPage ? "bg-white text-[#205375]" : ""
-              }`}
+            transform hover:-translate-y-1 active:translate-y-0 flex items-center ${
+              isGraduationPage ? "bg-white text-[#205375]" : ""
+            }`}
             >
               Graduation
               {graduationOpen ? <ChevronUp className="ml-1 h-4 w-4" /> : <ChevronDown className="ml-1 h-4 w-4" />}
@@ -160,9 +168,9 @@ export function SiteHeader() {
             <button
               onClick={() => setPostGradOpen(!postGradOpen)}
               className={`px-3 py-1.5 text-sm text-white hover:bg-white hover:text-[#205375] transition-all duration-300 
-              transform hover:-translate-y-1 active:translate-y-0 flex items-center ${
-                isPostGradPage ? "bg-white text-[#205375]" : ""
-              }`}
+            transform hover:-translate-y-1 active:translate-y-0 flex items-center ${
+              isPostGradPage ? "bg-white text-[#205375]" : ""
+            }`}
             >
               Post-Graduation
               {postGradOpen ? <ChevronUp className="ml-1 h-4 w-4" /> : <ChevronDown className="ml-1 h-4 w-4" />}
@@ -214,9 +222,9 @@ export function SiteHeader() {
             <button
               onClick={() => setDepartmentsOpen(!departmentsOpen)}
               className={`px-3 py-1.5 text-sm text-white hover:bg-white hover:text-[#205375] transition-all duration-300 
-              transform hover:-translate-y-1 active:translate-y-0 flex items-center ${
-                isDepartmentPage ? "bg-white text-[#205375]" : ""
-              }`}
+            transform hover:-translate-y-1 active:translate-y-0 flex items-center ${
+              isDepartmentPage ? "bg-white text-[#205375]" : ""
+            }`}
             >
               Departements
               {departmentsOpen ? <ChevronUp className="ml-1 h-4 w-4" /> : <ChevronDown className="ml-1 h-4 w-4" />}
@@ -263,29 +271,14 @@ export function SiteHeader() {
             )}
           </div>
 
-          <Link
-            href="/programs"
-            className={`px-3 py-1.5 text-sm text-white hover:bg-white hover:text-[#205375] transition-all duration-300 
-            transform hover:-translate-y-1 active:translate-y-0 ${
-              pathname === "/programs" ||
-              pathname.includes("/lmd-program") ||
-              pathname.includes("/classic-program") ||
-              pathname.includes("/licence-pro")
-                ? "bg-white text-[#205375]"
-                : ""
-            }`}
-          >
-            Program
-          </Link>
-
           {/* Research Laboratories Dropdown */}
           <div className="relative group">
             <button
               onClick={() => setResearchOpen(!researchOpen)}
               className={`px-3 py-1.5 text-sm text-white hover:bg-white hover:text-[#205375] transition-all duration-300 
-              transform hover:-translate-y-1 active:translate-y-0 flex items-center ${
-                isResearchPage ? "bg-white text-[#205375]" : ""
-              }`}
+            transform hover:-translate-y-1 active:translate-y-0 flex items-center ${
+              isResearchPage ? "bg-white text-[#205375]" : ""
+            }`}
             >
               Research laboratories
               {researchOpen ? <ChevronUp className="ml-1 h-4 w-4" /> : <ChevronDown className="ml-1 h-4 w-4" />}
@@ -335,19 +328,20 @@ export function SiteHeader() {
           <Link
             href="/e-bibliotheque"
             className={`px-3 py-1.5 text-sm text-white hover:bg-white hover:text-[#205375] transition-all duration-300 
-            transform hover:-translate-y-1 active:translate-y-0 ${pathname === "/e-bibliotheque" ? "bg-white text-[#205375]" : ""}`}
+          transform hover:-translate-y-1 active:translate-y-0 ${pathname === "/e-bibliotheque" ? "bg-white text-[#205375]" : ""}`}
           >
             E-bibliotheque
           </Link>
           <Link
             href="/contact"
             className="px-3 py-1.5 text-sm border border-white text-white hover:bg-white hover:text-[#205375] transition-all 
-            duration-300 transform hover:-translate-y-1 active:translate-y-0 hover:shadow-md"
+          duration-300 transform hover:-translate-y-1 active:translate-y-0 hover:shadow-md"
           >
             Contact
           </Link>
         </nav>
       </div>
+      <SearchDialog open={searchOpen} onOpenChange={setSearchOpen} />
     </header>
   )
 }
